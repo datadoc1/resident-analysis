@@ -1,0 +1,53 @@
+Region,State,State Acronym
+New England,Connecticut,CT
+New England,Maine,ME
+New England,Massachusetts,MA
+New England,New Hampshire,NH
+New England,Rhode Island,RI
+New England,Vermont,VT
+Middle Atlantic,New Jersey,NJ
+Middle Atlantic,New York,NY
+Middle Atlantic,Pennsylvania,PA
+East North Central,Illinois,IL
+East North Central,Indiana,IN
+East North Central,Michigan,MI
+East North Central,Ohio,OH
+East North Central,Wisconsin,WI
+West North Central,Iowa,IA
+West North Central,Kansas,KS
+West North Central,Minnesota,MN
+West North Central,Missouri,MO
+West North Central,Nebraska,NE
+West North Central,North Dakota,ND
+West North Central,South Dakota,SD
+South Atlantic,Delaware,DE
+South Atlantic,District of Columbia,DC
+South Atlantic,Florida,FL
+South Atlantic,Georgia,GA
+South Atlantic,Maryland,MD
+South Atlantic,North Carolina,NC
+South Atlantic,Puerto Rico,PR
+South Atlantic,South Carolina,SC
+South Atlantic,Virginia,VA
+South Atlantic,West Virginia,WV
+East South Central,Alabama,AL
+East South Central,Kentucky,KY
+East South Central,Mississippi,MS
+East South Central,Tennessee,TN
+West South Central,Arkansas,AR
+West South Central,Louisiana,LA
+West South Central,Oklahoma,OK
+West South Central,Texas,TX
+Mountain,Arizona,AZ
+Mountain,Colorado,CO
+Mountain,Idaho,ID
+Mountain,Montana,MT
+Mountain,Nevada,NV
+Mountain,New Mexico,NM
+Mountain,Utah,UT
+Mountain,Wyoming,WY
+Pacific,Alaska,AK
+Pacific,California,CA
+Pacific,Hawaii,HI
+Pacific,Oregon,OR
+Pacific,Washington,WA

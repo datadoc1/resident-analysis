@@ -1,0 +1,28 @@
+﻿body {
+    background-color: white;
+}
+
+.noprint {
+    display: none !important;
+}
+
+a:link, a:visited {
+    color: #808080
+}
+
+.printPageBreak {
+    page-break-after: always
+}
+
+.pageBottom {
+    bottom: 0;
+    position: absolute;
+}
+
+.printOnly {
+    display: block;
+}
+
+.printOnly-inline {
+    display: inline;
+}

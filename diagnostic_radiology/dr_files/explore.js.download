@@ -1,0 +1,121 @@
+﻿
+$("#ProgramSearch").keydown(function (event) {
+    if (event.which == 13) {
+        $("#ProgramSearchDiv").click();
+    }
+});
+
+function GridDataFilter() {
+
+    var dataGrid = $('#grid').data('kendoGrid');
+
+    //clear left filters
+    dataGrid.dataSource.filter({});
+    dataGrid.dataSource.sort({});
+    
+
+    if ($('.filters').find('input[type=checkbox]:checked').length  > 0) {
+        $('.filters').find('input[type=checkbox]:checked').removeAttr('checked');
+    }
+    
+    var value = $('#ProgramSearch').val();
+    dataGrid.dataSource.filter({field: "program", operator: "contains", value: value});
+
+}
+
+function GridDataSort(e) {
+    var dataGrid = $('#grid').data('kendoGrid');
+    var value = e.sender.value();
+
+    //PercentApplicantsWhoMatchedUSMD
+    //PercentApplicantsWhoMatchedUSDO
+    //PercentApplicantsWhoMatchedUSIMG
+    //PercentApplicantsWhoMatchedFMG
+    if (value === "similarity_asc") {
+        dataGrid.dataSource.sort({ field: "ProfileComparison", dir: "asc" });
+    }
+    else if (value === "similarity_desc") {
+        dataGrid.dataSource.sort({ field: "ProfileComparison", dir: "desc" });
+    }
+    else if (value === "compare_desc") {
+        dataGrid.dataSource.sort({ field: "Compare", dir: "desc" });
+    }
+    else if (value === "name_asc") {
+        dataGrid.dataSource.sort({ field: "Program", dir: "asc" });
+    }
+    else if (value === "name_desc") {
+        dataGrid.dataSource.sort({ field: "Program", dir: "desc" });
+    }
+    //else if (value === "size_asc") {
+    //    dataGrid.dataSource.sort({ field: "profilecomparison", dir: "asc" });
+    //}
+    //else if (value === "size_desc") {
+    //    dataGrid.dataSource.sort({ field: "profilecomparison", dir: "desc" });
+    //}
+    else if (value === "region_asc") {
+        dataGrid.dataSource.sort({ field: "Region", dir: "asc" });
+    }
+    else if (value === "region_desc") {
+        dataGrid.dataSource.sort({ field: "Region", dir: "desc" });
+    }
+    else if (value === "state_asc") {
+        dataGrid.dataSource.sort({ field: "State", dir: "asc" });
+    }
+    else if (value === "state_desc") {
+        dataGrid.dataSource.sort({ field: "State", dir: "desc" });
+    }
+    else if (value === "city_asc") {
+        dataGrid.dataSource.sort({ field: "City", dir: "asc" });
+    }
+    else if (value === "city_desc") {
+        dataGrid.dataSource.sort({ field: "City", dir: "desc" });
+    }
+
+}
+
+function addOrRemoveFilter(grid, field, operator, value) {
+
+    var newFilter = { field: field, operator: operator, value: value };
+    var dataSource = grid.dataSource;
+    var filters = null;
+    if (dataSource.filter() != null) {
+        filters = dataSource.filter().filters;
+    }
+
+    if (value && value.length > 0) {
+        //Add filter
+        if (filters == null) {
+            filters = [newFilter];
+        }
+        else {
+            var isNew = true;
+            var index = 0;
+            for (index = 0; index < filters.length; index++) {
+                if (filters[index].field == field && filters[index].value == value) {
+                    isNew = false;
+                    break;
+                }
+            }
+            if (isNew) {
+                filters.push(newFilter);
+            }
+            else {
+                filters[index] = newFilter;
+            }
+        }
+    }
+    else {
+        //Remove filter 
+        var removeIndex = -1;
+        for (var x = 0; x < filters.length; x++) {
+            var temp = filters[x];
+            if (temp.field == field) {
+                removeIndex = x;
+                break;
+            }
+        }
+        if (removeIndex != -1)
+            filters.splice(removeIndex, 1);
+    }
+    dataSource.filter(filters);
+}
