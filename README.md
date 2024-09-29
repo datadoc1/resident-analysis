@@ -34,7 +34,6 @@ Data analysis will leverage Python libraries (e.g., pandas, SciPy, statsmodels, 
 * **Descriptive Statistics:** Analysis will include examining distributions of residents and programs for each specialty.
 * **Statistical Tests:** Correlation tests (e.g., Pearson, Spearman) and hypothesis tests (e.g., t-tests, ANOVA) will be applied to assess statistical significance between variables.  The choice of test depends on the data's distribution.
 * **Data Visualization:** Relevant charts (histograms, bar charts, scatterplots) will be generated to visualize findings and understand patterns in the data.
-* **Specialty-Specific Analysis:** Analyses will be tailored to the specific needs and questions of the given medical specialty.
 
 ## **Specialty-Specific Project Pages and Relevant Links**
 * [Zotero Literature Base](https://www.zotero.org/groups/5607003/residency_match/library)
