@@ -45,7 +45,7 @@ Data analysis will leverage Python libraries (e.g., pandas, SciPy, statsmodels, 
 * [Data Entry](https://docs.google.com/spreadsheets/d/1CwiDUIbzlmIg_v6D5bjIGFCSrjr-3UFv12nZUvOenM4/edit?gid=777314366#gid=777314366) | Gender Breakdown | Home Program Breakdown | Medical School Production
 
 **Urology (IN PROGRESS, Project Lead: Vinay Sagar, MS2)**
-* [Data Entry](https://docs.google.com/spreadsheets/d/15QdufSZ20yhjXrSb4R2eZpruuSO6A9wlLHS8Cn2C7bw/edit?gid=777314366#gid=777314366) | Gender Breakdown | Home Program Breakdown | Medical School Production
+* [Data Entry](https://docs.google.com/spreadsheets/d/15QdufSZ20yhjXrSb4R2eZpruuSO6A9wlLHS8Cn2C7bw/edit?gid=777314366#gid=777314366) | [Gender Breakdown](https://docs.google.com/document/d/1e7mOLKBXcQUARnwq05NackrBRXd4IdiVqvmodz895BE/edit) | [Home Program Breakdown](https://docs.google.com/document/d/1NySVLA2a8o54nwRK6CBsmNx33eUlzpth5cCuYGWwIGE/edit#heading=h.dl0citqm87px) | [Medical School Production](https://docs.google.com/document/d/1bdUjG4pcex4dVJhuiJXXAJNsJmcT54aZ7RVLa4QplFY/edit)
 
 **Orthopedics (IN PROGRESS)**
 * [Data Entry](https://docs.google.com/spreadsheets/d/18yL7ZbQ-KVHxb8jjqgMZ9CCRcOl0j-pYctQgBbEJe1g/edit?gid=0#gid=0) | Gender Breakdown | Home Program Breakdown | Medical School Production
