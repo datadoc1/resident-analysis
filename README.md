@@ -36,19 +36,10 @@ Data analysis will leverage Python libraries (e.g., pandas, SciPy, statsmodels, 
 * **Data Visualization:** Relevant charts (histograms, bar charts, scatterplots) will be generated to visualize findings and understand patterns in the data.
 * **Specialty-Specific Analysis:** Analyses will be tailored to the specific needs and questions of the given medical specialty.
 
-## Project Stages
-
-Detailed timeline and responsibilities for each project phase should be defined (as in your provided example).  A clear division of labor is essential for efficient completion.
-
-
-## Manuscripts and Publication Strategy
-
-The project aims to produce peer-reviewed manuscripts and potentially conference abstracts. The specific journal targets and submission strategy will depend on the medical specialty. 
-
 ## **Specialty-Specific Project Pages and Relevant Links**
 * [Zotero Literature Base](https://www.zotero.org/groups/5607003/residency_match/library)
 * [Data Entry Template](https://docs.google.com/spreadsheets/d/1rTTYPH0BOQYeZOcWbq8ysIkA9uvxbjLBB_Vk2gx215g/edit?gid=378789652#gid=378789652)**
-* Paper Templates: [Gender Breakdown] | [Home Program Breakdown] | [Medical School Production](https://docs.google.com/document/d/1sV4WE1388i0wIzTobha0JGNTz8owlpDzoQK6FE-ogoo/edit)
+* Paper Templates: [Gender Breakdown](https://docs.google.com/document/d/1c5HX65ORgStKNxXgjQs22QcWSf8gqdlenWCH2_X5Z7k/edit) | [Home Program Breakdown] | [Medical School Production](https://docs.google.com/document/d/1sV4WE1388i0wIzTobha0JGNTz8owlpDzoQK6FE-ogoo/edit)
 
 **Dermatology (COMPLETE, Contact: Kyra Rozanitis, MS2)**
 * [Data Entry](https://docs.google.com/spreadsheets/d/1CwiDUIbzlmIg_v6D5bjIGFCSrjr-3UFv12nZUvOenM4/edit?gid=777314366#gid=777314366) | Gender Breakdown | Home Program Breakdown | Medical School Production
@@ -59,7 +50,11 @@ The project aims to produce peer-reviewed manuscripts and potentially conference
 **Orthopedics (IN PROGRESS)**
 * [Data Entry](https://docs.google.com/spreadsheets/d/18yL7ZbQ-KVHxb8jjqgMZ9CCRcOl0j-pYctQgBbEJe1g/edit?gid=0#gid=0) | Gender Breakdown | Home Program Breakdown | Medical School Production
 
-## **Potential Future Targets**
-* [AAMC Number of Active Residents By Specialty](https://www.aamc.org/data-reports/students-residents/data/table-b3-number-active-residents-type-medical-school-gme-specialty-and-sex) (Generally, specialties with 1000-3000 residents are a sweetspot. More residents and data entry will be longer, less residents and you run the risk of not finding anything interesting).
+**Potential Future Targets**
+* [AAMC Number of Active Residents By Specialty](https://www.aamc.org/data-reports/students-residents/data/table-b3-number-active-residents-type-medical-school-gme-specialty-and-sex) (Generally, specialties with 1000-3000 residents are a sweetspot. More residents and data entry may be tiresome, less residents and you run the risk of not finding anything interesting).
 
+## Other Projects Going On
+* Signal Analysis [project outline coming soon...]
+* Thoughts and reflections on research [series of blog posts coming soon...]
 
+Contact Keola Ching, MS2 at chingk@uthscsa.edu for questions
