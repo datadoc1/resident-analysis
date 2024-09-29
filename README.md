@@ -45,17 +45,7 @@ Detailed timeline and responsibilities for each project phase should be defined 
 
 The project aims to produce peer-reviewed manuscripts and potentially conference abstracts. The specific journal targets and submission strategy will depend on the medical specialty. 
 
-
-## Project Implementation Details (For your Reference)
-
-This project template is intended to be adapted to your specific specialty. You will need to create or customize:
-
-* **Data entry forms:** Create Excel sheets (or use a suitable database program) tailored to the specific medical specialty. The current example shows these data entry templates in the `Urology` folder.
-* **Standardized Name Conventions:** Create lists of standardized medical school names and program names to ensure consistent data entry (e.g., `Standardized Medical Schools.csv` and `Programs.csv`).
-* **Custom Python scripts:** Write specialized Python scripts (like the ones shown in the example) for data analysis relevant to the specialty.
-
-
-**Specialty-Specific Project Pages and Relevant Links:**
+## **Specialty-Specific Project Pages and Relevant Links:**
 * [Zotero](https://www.zotero.org/groups/5607003/residency_match/library)
 * [Data Entry Template](https://docs.google.com/spreadsheets/d/1rTTYPH0BOQYeZOcWbq8ysIkA9uvxbjLBB_Vk2gx215g/edit?gid=378789652#gid=378789652)**
 * Paper Templates: [Gender Breakdown] | [Home Program Breakdown] | [Medical School Production](https://docs.google.com/document/d/1sV4WE1388i0wIzTobha0JGNTz8owlpDzoQK6FE-ogoo/edit)
