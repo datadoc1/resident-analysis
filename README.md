@@ -39,7 +39,7 @@ Data analysis will leverage Python libraries (e.g., pandas, SciPy, statsmodels, 
 ## **Specialty-Specific Project Pages and Relevant Links**
 * [Zotero Literature Base](https://www.zotero.org/groups/5607003/residency_match/library)
 * [Data Entry Template](https://docs.google.com/spreadsheets/d/1rTTYPH0BOQYeZOcWbq8ysIkA9uvxbjLBB_Vk2gx215g/edit?gid=378789652#gid=378789652)**
-* Paper Templates: [Gender Breakdown](https://docs.google.com/document/d/1c5HX65ORgStKNxXgjQs22QcWSf8gqdlenWCH2_X5Z7k/edit) | [Home Program Breakdown] | [Medical School Production](https://docs.google.com/document/d/1sV4WE1388i0wIzTobha0JGNTz8owlpDzoQK6FE-ogoo/edit)
+* Paper Templates: [Gender Breakdown](https://docs.google.com/document/d/1c5HX65ORgStKNxXgjQs22QcWSf8gqdlenWCH2_X5Z7k/edit) | [Home Program Breakdown](https://docs.google.com/document/d/1gG4yruZJh2EVHqm3zXoa_Kpfm3oolSiosWPti9BZb8o/edit) | [Medical School Production](https://docs.google.com/document/d/1sV4WE1388i0wIzTobha0JGNTz8owlpDzoQK6FE-ogoo/edit)
 
 **Dermatology (COMPLETE, Contact: Kyra Rozanitis, MS2)**
 * [Data Entry](https://docs.google.com/spreadsheets/d/1CwiDUIbzlmIg_v6D5bjIGFCSrjr-3UFv12nZUvOenM4/edit?gid=777314366#gid=777314366) | Gender Breakdown | Home Program Breakdown | Medical School Production
