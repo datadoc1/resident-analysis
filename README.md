@@ -1,5 +1,3 @@
-Here is your text rewritten with proper Markdown hyperlinks:
-
 # Resident Analysis
 
 Take a look at the methods section of these three papers:
