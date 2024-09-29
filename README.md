@@ -43,7 +43,7 @@ Detailed timeline and responsibilities for each project phase should be defined 
 
 ## Manuscripts and Publication Strategy
 
-The project aims to produce peer-reviewed manuscripts and potentially conference abstracts. The specific journal targets and submission strategy will depend on the medical specialty.
+The project aims to produce peer-reviewed manuscripts and potentially conference abstracts. The specific journal targets and submission strategy will depend on the medical specialty. 
 
 
 ## Project Implementation Details (For your Reference)
@@ -55,14 +55,19 @@ This project template is intended to be adapted to your specific specialty. You 
 * **Custom Python scripts:** Write specialized Python scripts (like the ones shown in the example) for data analysis relevant to the specialty.
 
 
-**Specialty-Specific Project Pages/Data Entry Sheets (to be linked):**
-* **[General Template](https://docs.google.com/spreadsheets/d/1rTTYPH0BOQYeZOcWbq8ysIkA9uvxbjLBB_Vk2gx215g/edit?gid=378789652#gid=378789652)**
+**Specialty-Specific Project Pages and Relevant Links:**
+**Literature Base**
+* [Zotero](https://www.zotero.org/groups/5607003/residency_match/library)
+
+**[Templates]**
+* [Data Entry](https://docs.google.com/spreadsheets/d/1rTTYPH0BOQYeZOcWbq8ysIkA9uvxbjLBB_Vk2gx215g/edit?gid=378789652#gid=378789652)** [Gender Breakdown] | [Home Program Breakdown] | [Medical School Production](https://docs.google.com/document/d/1sV4WE1388i0wIzTobha0JGNTz8owlpDzoQK6FE-ogoo/edit)
 
 * **[Dermatology](https://docs.google.com/spreadsheets/d/1CwiDUIbzlmIg_v6D5bjIGFCSrjr-3UFv12nZUvOenM4/edit?gid=777314366#gid=777314366)**
-* **[Urology](https://docs.google.com/spreadsheets/d/15QdufSZ20yhjXrSb4R2eZpruuSO6A9wlLHS8Cn2C7bw/edit?gid=777314366#gid=777314366)**
+**Urology**
+* [Data Entry](https://docs.google.com/spreadsheets/d/15QdufSZ20yhjXrSb4R2eZpruuSO6A9wlLHS8Cn2C7bw/edit?gid=777314366#gid=777314366)** | 
 * **[Orthopedics](https://docs.google.com/spreadsheets/d/18yL7ZbQ-KVHxb8jjqgMZ9CCRcOl0j-pYctQgBbEJe1g/edit?gid=0#gid=0)**
 
-Potential Future Targets:
+**Potential Future Targets:**
 * [AAMC Number of Active Residents By Specialty](https://www.aamc.org/data-reports/students-residents/data/table-b3-number-active-residents-type-medical-school-gme-specialty-and-sex) (Generally, specialties with 1000-3000 residents are a sweetspot. More residents and data entry will be longer, less residents and you run the risk of not finding anything interesting).
 
 
