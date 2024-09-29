@@ -45,8 +45,8 @@ Detailed timeline and responsibilities for each project phase should be defined 
 
 The project aims to produce peer-reviewed manuscripts and potentially conference abstracts. The specific journal targets and submission strategy will depend on the medical specialty. 
 
-## **Specialty-Specific Project Pages and Relevant Links:**
-* [Zotero](https://www.zotero.org/groups/5607003/residency_match/library)
+## **Specialty-Specific Project Pages and Relevant Links**
+* [Zotero Literature Base](https://www.zotero.org/groups/5607003/residency_match/library)
 * [Data Entry Template](https://docs.google.com/spreadsheets/d/1rTTYPH0BOQYeZOcWbq8ysIkA9uvxbjLBB_Vk2gx215g/edit?gid=378789652#gid=378789652)**
 * Paper Templates: [Gender Breakdown] | [Home Program Breakdown] | [Medical School Production](https://docs.google.com/document/d/1sV4WE1388i0wIzTobha0JGNTz8owlpDzoQK6FE-ogoo/edit)
 
@@ -59,7 +59,7 @@ The project aims to produce peer-reviewed manuscripts and potentially conference
 **Orthopedics (IN PROGRESS)**
 * [Data Entry](https://docs.google.com/spreadsheets/d/18yL7ZbQ-KVHxb8jjqgMZ9CCRcOl0j-pYctQgBbEJe1g/edit?gid=0#gid=0) | Gender Breakdown | Home Program Breakdown | Medical School Production
 
-**Potential Future Targets:**
+## **Potential Future Targets**
 * [AAMC Number of Active Residents By Specialty](https://www.aamc.org/data-reports/students-residents/data/table-b3-number-active-residents-type-medical-school-gme-specialty-and-sex) (Generally, specialties with 1000-3000 residents are a sweetspot. More residents and data entry will be longer, less residents and you run the risk of not finding anything interesting).
 
 
