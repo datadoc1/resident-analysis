@@ -22,7 +22,7 @@ This project offers a structured approach to create new data and insights that a
 
 The project relies on compiling data from residency program websites, social media platforms (e.g., Instagram, LinkedIn, Doximity), and other publicly available sources. Standardized data entry forms are crucial to ensure accuracy and consistency across the dataset. Data will be organized into linked tables:
 
-* **Programs:** Information about each residency program in the chosen specialty (name, program director gender, total spots, region, state, etc.).
+* **Programs:** Information about each residency program in the chosen specialty (name, program director gender, total spots, region, state, etc.). A list of State, City, and Program Name can be found [here](https://systems.aamc.org/eras/erasstats/par/index.cfm)
 * **Residents:** Detailed information about each resident (program name, medical school, gender, relevant demographics).
 * **Home Programs:** A mapping of medical schools to their affiliated programs for the chosen specialty.
 
@@ -34,7 +34,6 @@ Data analysis will leverage Python libraries (e.g., pandas, SciPy, statsmodels, 
 * **Descriptive Statistics:** Analysis will include examining distributions of residents and programs for each specialty.
 * **Statistical Tests:** Correlation tests (e.g., Pearson, Spearman) and hypothesis tests (e.g., t-tests, ANOVA) will be applied to assess statistical significance between variables.  The choice of test depends on the data's distribution.
 * **Data Visualization:** Relevant charts (histograms, bar charts, scatterplots) will be generated to visualize findings and understand patterns in the data.
-* **Specialty-Specific Analysis:** Analyses will be tailored to the specific needs and questions of the given medical specialty.
 
 ## **Specialty-Specific Project Pages and Relevant Links**
 * [Zotero Literature Base](https://www.zotero.org/groups/5607003/residency_match/library)
