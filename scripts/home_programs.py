@@ -8,12 +8,12 @@ import numpy as np
 from scipy.stats import pearsonr
 
 # Specify Folder Path
-folder_path = 'dermatology'
+folder_path = input("Enter the specialty name: ")
 
 # Specify the file path
-programs_file = folder_path + '/Programs.csv'
-residents_file = folder_path + '/Residents.csv'
-standardized_names_file = folder_path + '/Standardized Medical Schools.csv'
+programs_file = 'data/' + folder_path + '/csv/Programs.csv'
+residents_file = 'data/' + folder_path + '/csv/Residents.csv'
+standardized_names_file = 'data/' + folder_path + '/csv/Standardized Medical Schools.csv'
 
 # Read the CSV file into a DataFrame
 programs = pd.read_csv(programs_file)

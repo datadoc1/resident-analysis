@@ -5,7 +5,7 @@ import statsmodels.api as sm
 import seaborn as sns
 import scipy.stats as stats
 
-folder_path = 'dermatology'
+folder_path = 'urology'
 
 # Specify the file path
 programs_file = folder_path + '/Programs.csv'
