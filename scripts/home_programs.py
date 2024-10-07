@@ -46,7 +46,6 @@ excluded = residents[~residents['Program'].isin(standardized_names['Affiliated P
 print(len(excluded))
 print(len(excluded['Program'].unique()))
 
-
 # Delete rows with Program values that don't show up in standardized_names['School']
 residents = residents[residents['Program'].isin(standardized_names['Affiliated Program'])]
 print(len(residents))
@@ -89,9 +88,12 @@ print("Count of each unique value of 'PD Gender':")
 print(gender_count)
 
 # Count the unique values of 'Region'
+region_key = pd.read_csv('eras_regions.csv')
+programs['Region'] = programs['State'].map(region_key.set_index('State')['Region'])
+programs.to_csv('reports/' + folder_path + '/programs.csv', index=False)
 region_count = programs['Region'].value_counts()
-print("Count of each unique value of 'Region':")
-print(region_count)
+region_count.to_csv('reports/' + folder_path + '/program_count_by_region.csv', header=True, index=True)
+
 
 # Merge programs DataFrame onto residents DataFrame
 residents = residents.merge(programs[['Program Name', 'State', 'PD Gender', 'Region', 'Total Spots']], left_on='Program', right_on='Program Name', how='left')
