@@ -1,0 +1,25 @@
+Resident Count: 1913
+Number of female residents: 701
+Number of male residents: 1212
+
+More total spots is weakly associated with a higher percentage of females.
+
+Correlation: 0.1804733429738464
+P-value: 0.03223027831270116
+
+>>> t_stat, p_value = ttest_ind(merged_df[merged_df['PD Gender'] == 'F']['Female Percentage'], merged_df[merged_df['PD Gender'] == 'M']['Female Percentage'])
+>>> print(f"Independent t-test: t-statistic={t_stat}, p-value={p_value}")  
+Independent t-test: t-statistic=2.298744430162073, p-value=0.023010734124727147
+
+model = ols('Q("Female Percentage") ~ Q("PD Gender")', data=merged_df).fit()
+anova_table = sm.stats.anova_lm(model, typ=2)
+print(anova_table)
+>>> print(anova_table)
+                      sum_sq     df         F    PR(>F)
+Q("PD Gender")   1251.113794    1.0  5.284226  0.023011
+Residual        32910.178113  139.0       NaN       NaN
+
+Will clean up this report later. Stats say:
+
+- PD Gender of Female is associated with a higher percentage of females.
+- More Total Spots (Larger Programs) is weakly associated with a higher percentage of females.

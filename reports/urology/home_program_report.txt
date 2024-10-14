@@ -1,0 +1,70 @@
+Home Program Analysis
+
+1655 Urology residents from 118 urology programs. Only residents at programs with an affiliated medical school were included.
+291 residents and 26 programs were omitted because they didn't have an affiliated medical school
+
+19.58% of students matched to their home program
+
+
+The table below represents percentiles for "% of Program that are home matches"
+10%     0.000000
+25%    11.111111
+50%    20.000000
+75%    30.000000
+90%    37.056277
+
+Interpretation: The median residency program recruits 20% of their residents from their affiliated medical school. 10% of residency programs recruit 37.05% or more of their residents from their affiliated medical school.
+
+The table below breaksdown home matches by Gender:
+M    20.000000
+F    19.435216
+
+Interpretation: 20% of male residents matched to their home institution. 19.43% of females matched to their home institution.
+
+THis is the breakdown of PD Gender's among 117 programs:
+PD Gender
+M    87
+F    30
+
+Interpretation: 87 PDs are male.
+
+These are the number of programs in each region:
+Middle Atlantic,25
+South Atlantic,20
+East North Central,20
+West South Central,12
+Pacific,12
+West North Central,9
+New England,8
+East South Central,6
+Mountain,5
+
+
+This table shows the percentage of students recruited to a program that were from their affiliated medical school, broken down by gender of Program Director
+M    20.216306
+F    18.367347
+
+Interpretation: Programs that have a female PD had 18.37% of their residency programs filled by students from their affiliated medical school
+
+This table shows the percentage of students recruited to a program that were from their affiliated medical school, broken down by how many spots are avialbe each year
+Total Spots
+1.0    29.268293
+2.0    22.597403
+5.0    22.429907
+4.0    19.362745
+3.0    17.378917
+
+INterpretation: Programs with only 1 spot per year, fill that spot with a student from their affiliated medical school 29.27% of the time
+
+This table shows the percentage of students recruited to a program that were from their affiliated medical school, broken down by residency program region
+West South Central,27.810650887573964
+East North Central,24.731182795698924
+South Atlantic,21.071428571428573
+Middle Atlantic,19.88472622478386
+East South Central,17.5
+West North Central,15.267175572519085
+Pacific,14.973262032085561
+New England,12.359550561797752
+Mountain,8.641975308641975
+
+Interpretation: Programs in the Mountain region only fill 8.64% of their residency class with students from their affiliated medical school

@@ -8,9 +8,9 @@ import scipy.stats as stats
 folder_path = 'urology'
 
 # Specify the file path
-programs_file = folder_path + '/Programs.csv'
-residents_file = folder_path + '/Residents.csv'
-standardized_names_file = folder_path + '/Standardized Medical Schools.csv'
+programs_file = 'data/' + folder_path + '/csv/Programs.csv'
+residents_file = 'data/' + folder_path + '/csv/Residents.csv'
+standardized_names_file = 'data/' + folder_path + '/csv/Standardized Medical Schools.csv'
 
 # Read the CSV file into a DataFrame
 programs = pd.read_csv(programs_file)
@@ -45,11 +45,14 @@ for program in unique_programs:
         continue
     
     female_percentage = (female_count / total_count) * 100
-    gender_ratio.append((program, female_percentage))
-
-gender_ratio_df = pd.DataFrame(gender_ratio, columns=['Program', 'Female Percentage'])
+    gender_ratio.append((program, female_percentage, male_count, female_count, total_count))
+    
+gender_ratio_df = pd.DataFrame(gender_ratio, columns=['Program', 'Female Percentage', 'Male Count', 'Female Count', 'Total Count'])
 gender_ratio_df.sort_values(by='Female Percentage', ascending=False, inplace=True)
 print(gender_ratio_df.describe())
+gender_ratio_df.to_csv('reports/' + folder_path + '/gender_breakdown_by_school.csv', index=False)
+gender_ratio_df.describe().to_csv('reports/' + folder_path + '/gender_breakdown_summary.csv', index=True)
+
 
 residents_len = len(residents)
 print(f"Number of residents: {residents_len}")

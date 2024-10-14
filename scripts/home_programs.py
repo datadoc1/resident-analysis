@@ -134,6 +134,7 @@ program_percentage_home_program = program_percentage_home_program.merge(standard
 print(program_percentage_home_program)
 
 # Perform Pearson correlation test between 'Matriculants' and 'Home Program'
+program_percentage_home_program = program_percentage_home_program.dropna(subset=['Matriculants', 'Home Program'])
 correlation, p_value = pearsonr(program_percentage_home_program['Matriculants'], program_percentage_home_program['Home Program'])
 print(f"Pearson correlation coefficient: {correlation}")
 print(f"P-value: {p_value}")
