@@ -66,6 +66,8 @@ male_count = len(male_residents)
 print(f"Number of female residents: {female_count}")
 print(f"Number of male residents: {male_count}")
 
+region_key = pd.read_csv('eras_regions.csv')
+programs['Region'] = programs['State'].map(region_key.set_index('State')['Region'])
 merged_df = pd.merge(gender_ratio_df, programs[['Program Name', 'PD Gender', 'Total Spots', 'Region']], left_on='Program', right_on='Program Name', how='left')
 print(merged_df)
 
