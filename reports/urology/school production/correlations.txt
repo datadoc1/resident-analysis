@@ -1,0 +1,5 @@
+Residents vs Ratio: Correlation=0.8296612910279678, p=2.682212985457445e-39
+Ratio vs Urology Funding: Correlation=0.33952500605735114, p=0.05322645467165785
+Residents vs Urology Funding: Correlation=0.22350403342448055, p=0.2111842059602537
+Ratio vs NIH Funding: Correlation=0.36861330223680683, p=7.421700962596564e-06
+Residents vs NIH Funding: Correlation=0.2964177816821652, p=0.0003764284514179043

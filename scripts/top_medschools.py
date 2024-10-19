@@ -7,9 +7,18 @@ import scipy.stats as stats
 import os
 import plotly.express as px
 
+def compute_pearson_correlation(x, y):
+    # Drop rows with NaN values
+    valid_indices = ~x.isna() & ~y.isna()
+    x = x[valid_indices]
+    y = y[valid_indices]
+    
+    correlation, p_value = stats.pearsonr(x, y)
+    return correlation, p_value
+
+correlations = []
 specialty = input("Enter the specialty folder name: ")
 data_path = 'data/' + specialty + '/csv'
-
 
 # Specify the file path
 programs_file = data_path + '/Programs.csv'
@@ -82,31 +91,89 @@ fig.update_layout(
 fig.write_image(output_folder + 'percentage_of_class_entering_by_tier.png')
 
 # Create a scatter plot of Residents by Ratio using Plotly
-fig = px.scatter(merged_table, x='Residents', y='Ratio', labels={'Residents': 'Number of Students Entering Urology Residency', 'Ratio': 'Percentage of Medical School Class Entering Urology Residency'})
-fig.update_layout(
-    yaxis_tickformat='.1%'
+fig = px.scatter(merged_table, x='Residents', y='Ratio', labels={'Residents': 'Number of Students Entering Urology Residency', 'Ratio': 'Percentage of Medical School Class Entering Urology Residency'}, trendline='ols')
+fig.update_layout(yaxis_tickformat='.1%')
+trendline_results = px.get_trendline_results(fig)
+r_squared = trendline_results.iloc[0]["px_fit_results"].rsquared
+correlation, p_value = compute_pearson_correlation(merged_table['Residents'], merged_table['Ratio'])
+fig.add_annotation(
+    x=max(merged_table['Residents']),
+    y=max(merged_table['Ratio']),
+    text=f'R²={r_squared:.2f}, p={p_value:.2e}',
+    showarrow=False,
+    yshift=10
 )
-
 fig.write_image(output_folder + 'number_of_class_entering_vs_percentage_of_class.png')
 
-# Create a scatterplot of Ratio by Urology Department Funding using Plotly
-fig = px.scatter(merged_table, x='Ratio', y='Urology Funding', labels={'Ratio': 'Percentage of Medical School Class Entering Urology Residency', 'Urology Funding': 'Urology Department Funding'})
-fig.update_layout(
-    xaxis_tickformat='.1%'
+correlations.append(f'Residents vs Ratio: Correlation={correlation}, p={p_value}')
+
+# Scatter plot of Ratio by Urology Department Funding
+fig = px.scatter(merged_table, x='Ratio', y='Urology Funding', labels={'Ratio': 'Percentage of Medical School Class Entering Urology Residency', 'Urology Funding': 'Urology Department Funding'}, trendline='ols')
+fig.update_layout(xaxis_tickformat='.1%')
+trendline_results = px.get_trendline_results(fig)
+r_squared = trendline_results.iloc[0]["px_fit_results"].rsquared
+correlation, p_value = compute_pearson_correlation(merged_table['Ratio'], merged_table['Urology Funding'])
+fig.add_annotation(
+    x=max(merged_table['Ratio']),
+    y=max(merged_table['Urology Funding']),
+    text=f'R²={r_squared:.2f}, p={p_value:.2e}',
+    showarrow=False,
+    yshift=10
 )
 fig.write_image(output_folder + 'percentage_of_class_entering_vs_urology_funding.png')
 
-# Create a scatterplot of Ratio by NIH Funding using Plotly
-fig = px.scatter(merged_table, x='Ratio', y='NIH Funding', labels={'Ratio': 'Percentage of Medical School Class Entering Urology Residency', 'NIH Funding': 'Total NIH Funding'})
-fig.update_layout(
-    xaxis_tickformat='.1%'
+correlations.append(f'Ratio vs Urology Funding: Correlation={correlation}, p={p_value}')
+
+# Scatter plot of Residents by Urology Department Funding
+fig = px.scatter(merged_table, x='Residents', y='Urology Funding', labels={'Residents': 'Number of Students Entering Urology Residency', 'Urology Funding': 'Urology Department Funding'}, trendline='ols')
+trendline_results = px.get_trendline_results(fig)
+r_squared = trendline_results.iloc[0]["px_fit_results"].rsquared
+correlation, p_value = compute_pearson_correlation(merged_table['Residents'], merged_table['Urology Funding'])
+fig.add_annotation(
+    x=max(merged_table['Residents']),
+    y=max(merged_table['Urology Funding']),
+    text=f'R²={r_squared:.2f}, p={p_value:.2e}',
+    showarrow=False,
+    yshift=10
+)
+fig.write_image(output_folder + 'number_of_class_entering_vs_urology_funding.png')
+
+correlations.append(f'Residents vs Urology Funding: Correlation={correlation}, p={p_value}')
+
+# Scatter plot of Ratio by NIH Funding
+fig = px.scatter(merged_table, x='Ratio', y='NIH Funding', labels={'Ratio': 'Percentage of Medical School Class Entering Urology Residency', 'NIH Funding': 'Total NIH Funding'}, trendline='ols')
+fig.update_layout(xaxis_tickformat='.1%')
+trendline_results = px.get_trendline_results(fig)
+r_squared = trendline_results.iloc[0]["px_fit_results"].rsquared
+correlation, p_value = compute_pearson_correlation(merged_table['Ratio'], merged_table['NIH Funding'])
+fig.add_annotation(
+    x=max(merged_table['Ratio']),
+    y=max(merged_table['NIH Funding']),
+    text=f'R²={r_squared:.2f}, p={p_value:.2e}',
+    showarrow=False,
+    yshift=10
 )
 fig.write_image(output_folder + 'percentage_of_class_entering_vs_nih_funding.png')
 
-# Create a scatterplot of Residents by NIH Funding using Plotly
-fig = px.scatter(merged_table, x='Residents', y='NIH Funding', labels={'Residents': 'Number of Students Entering Urology Residency', 'NIH Funding': 'Total NIH Funding'})
+correlations.append(f'Ratio vs NIH Funding: Correlation={correlation}, p={p_value}')
+
+# Scatter plot of Residents by NIH Funding
+fig = px.scatter(merged_table, x='Residents', y='NIH Funding', labels={'Residents': 'Number of Students Entering Urology Residency', 'NIH Funding': 'Total NIH Funding'}, trendline='ols')
+trendline_results = px.get_trendline_results(fig)
+r_squared = trendline_results.iloc[0]["px_fit_results"].rsquared
+correlation, p_value = compute_pearson_correlation(merged_table['Residents'], merged_table['NIH Funding'])
+fig.add_annotation(
+    x=max(merged_table['Residents']),
+    y=max(merged_table['NIH Funding']),
+    text=f'R²={r_squared:.2f}, p={p_value:.2e}',
+    showarrow=False,
+    yshift=10
+)
 fig.write_image(output_folder + 'number_of_class_entering_vs_nih_funding.png')
 
+correlations.append(f'Residents vs NIH Funding: Correlation={correlation}, p={p_value}')
 
-
-
+# Save correlations to a .txt file
+with open(output_folder + 'correlations.txt', 'w') as f:
+    for line in correlations:
+        f.write(line + '\n')
